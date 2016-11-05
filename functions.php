@@ -1,8 +1,5 @@
 <?php
 
-update_option( 'siteurl', 'http://elementsdev.us' );
-update_option( 'home', 'http://elementsdev.us' );
-
 function my_theme_enqueue_styles() {
 
     $parent_style = 'shoreditch-style'; // This is 'twentyfifteen-style' for the Twenty Fifteen theme.
