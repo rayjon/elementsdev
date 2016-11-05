@@ -13,9 +13,6 @@ function my_theme_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 
-update_option( 'siteurl', 'http://elementsdev.dev' );
-update_option( 'home', 'http://elementsdev.dev' );
-
 //Enqueue the Dashicons script
 add_action( 'wp_enqueue_scripts', 'amethyst_enqueue_dashicons' );
 function amethyst_enqueue_dashicons() {
