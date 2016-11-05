@@ -1,0 +1,333 @@
+/*
+Template: Shoreditch
+Theme URI: https://crisaba.com
+Description: This theme was developed for Elements Development and is based
+on the Shoreditch theme by Automattic.
+Version: 1.0.0
+Author: Raymond Johnson
+Author URI: https://linkedin.com/raycjon
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: elementsdev
+*/
+
+@import "bourbon";
+@import "neat";
+@import "sass/base/base";
+
+header {
+  .site-title {
+    font-family: $heading-font-family;
+  }
+}
+
+.site-header-wrapper {
+  @include media($large-screen) {
+    width: calc(100% - #{$base-spacing} * 3);
+  }
+}
+
+.main-navigation li {
+  @include media($large-screen) {
+    margin: 0 $small-spacing;
+  }
+}
+
+.home {
+    .site-header {
+        position: absolute;
+    }
+    .site-title a {
+        color: $base-background-color;
+    }
+
+    .main-navigation a {
+        color: $base-background-color;
+
+        &:hover {
+            border-color: $base-background-color;
+        }
+    }
+
+    .main-navigation .menu-item-has-children > a:after {
+        color: $base-background-color;
+    }
+}
+
+.entry-content {
+  p, ul, ol {
+    @include media($large-screen) {
+      font-size: rem(19);
+    }
+  }
+
+  ul, ol {
+    margin-bottom: $base-spacing * 1.5;
+  }
+
+  li {
+    margin-bottom: $base-spacing / 4;
+  }
+}
+
+.home .hero {
+  //@include background(linear-gradient(transparentize($secondary-color, 0.1), transparentize(saturate($secondary-color, 20%), 0.1)), url("images/websites-for-people.jpeg"));
+
+  background-image: linear-gradient(rgba(62, 105, 220, 0.9), rgba(39, 95, 243, 0.9)), url(images/websites-for-people.jpeg);
+
+  .entry-header {
+    padding: $base-spacing;
+  }
+  h1, p {
+    color: $base-background-color;
+  }
+
+  padding: $section-spacing * 2 0 $section-spacing * 1.5;
+
+  .button {
+      color: $base-background-color;
+      border-color: $base-background-color;
+
+      &:hover {
+          background: $base-background-color;
+          color: $base-font-color;
+      }
+  }
+}
+
+.how-we-help {
+    display: flex;
+    min-height: 60vh;
+    background: $jaguar;
+    color: $mercury;
+    figure {
+        width: 40%;
+        position: relative;
+        overflow: hidden;
+        flex-grow: 1;
+    }
+    .entry-header {
+        margin-bottom: $base-spacing * 2;
+    }
+    .dashicons, .dashicons-before:before {
+        font-size: inherit;
+        margin-right: $small-spacing / 2;
+        margin-top: 3px; //center vertically
+    }
+    h3 {
+        font-size: modular-scale(0);
+        text-transform: uppercase;
+        letter-spacing: rem(3);
+    }
+    p {
+        margin-bottom: $base-spacing * 2;
+    }
+    img {
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        max-width: 100%;
+    }
+
+    .services {
+        box-sizing: border-box;
+        border-left: 22px solid $gulf-stream;
+        width: 60%;
+        padding: $section-spacing $base-spacing * 3;
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-left: 22px solid $cerulean;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 20px;
+            right: 0;
+            border-left: 22px solid $secondary-color;
+        }
+    }
+
+    .wrapper {
+        box-sizing: border-box;
+
+        max-width: $medium-screen;
+        margin: 0 auto;
+    }
+
+    .development {
+        color: $flamingo;
+    }
+
+    .design {
+        color: $cerulean;
+    }
+
+    .maintenance {
+        color: saturate($gulf-stream, 20%);
+    }
+}
+
+.wrap {
+    @include outer-container;
+}
+
+.who-we-help {
+    background-image: linear-gradient(rgba(255, 252, 243, 0.6), rgba(230, 241, 248, 0.1)), url(images/seigaiha.png);
+    padding: $section-spacing;
+
+    header, footer {
+        text-align: center;
+    }
+    .cards {
+        margin-bottom: $base-spacing
+    }
+}
+
+.home .entry-header {
+    margin-bottom: $base-spacing * 2;
+}
+
+.home .hentry:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+
+.home .testimonials {
+    @include outer-container;
+    padding: $section-spacing 0;
+
+    .wrap {
+        @include span-columns(8);
+        @include shift(2);
+    }
+    blockquote {
+        border: none;
+        padding: 0;
+        margin: 0 0 $base-spacing;
+        font-size: modular-scale(1);
+        font-style: normal;
+        line-height: 2;
+    }
+
+    img {
+        border-radius: 50%;
+        width: 4rem;
+        height: 4rem;
+        margin-right: $small-spacing;
+    }
+}
+
+.cta {
+    display: flex;
+    min-height: 60vh;
+    background: $base-font-color;
+    color: $base-background-color;
+    figure {
+        width: 40%;
+        position: relative;
+        overflow: hidden;
+        flex-grow: 1;
+    }
+
+    img {
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        max-width: 100%;
+    }
+
+    .start-your-project {
+        box-sizing: border-box;
+        width: 60%;
+        padding: $base-spacing * 3;
+    }
+
+    .wrapper {
+        box-sizing: border-box;
+        max-width: $medium-screen;
+        margin: 0 auto;
+    }
+}
+
+.site-footer, .widget-footer-bottom-area {
+    background: #333;
+    border-color: #222;
+    color: $base-background-color;
+}
+
+.site-footer .menu-item,
+.widget_nav_menu li,
+.widget_nav_menu ul {
+    border: none;
+}
+
+// #main .hentry {
+//     border: none;
+//     padding: $section-spacing 0;
+//     margin-top: 0;
+//     margin-bottom: 0;
+//
+//     &:first-child {
+//         padding-top: 0;
+//         padding-bottom: 0;
+//     }
+// }
+// .page.hentry {
+//     padding-bottom: 0;
+// }
+
+.hentry-wrapper {
+    max-width: rem(700px);
+}
+
+@import "sass/components/timeline";
+@import "sass/components/cards";
+@import "sass/components/how-we-help";
+
+.contact-form label span {
+    display: none;
+}
+
+.portfolio-wrapper {
+    margin-bottom: $section-spacing;
+}
+
+.portfolio-wrapper .hentry {
+    margin: 0 $base-spacing $base-spacing * 1.5;
+    padding: inherit;
+}
+
+body.single-jetpack-portfolio .content-area {
+    width: 100%;
+}
+
+.site-info {
+    margin: 0 auto;
+}
+
+.hentry .service:not(:first-child) {
+    margin-top: $section-spacing;
+    overflow: auto;;
+}

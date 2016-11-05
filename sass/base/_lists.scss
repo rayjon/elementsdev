@@ -1,0 +1,26 @@
+ul,
+ol {
+   //list-style-type: none;
+   //margin: 0;
+   //padding: 0;
+   margin-bottom: $base-spacing * 1.5;
+}
+
+.entry-content {
+    ul, ol {
+        margin-bottom: $base-spacing * 1.5;
+    }
+}
+//
+// dl {
+//   margin: 0;
+// }
+//
+// dt {
+//   font-weight: 600;
+//   margin: 0;
+// }
+//
+// dd {
+//   margin: 0;
+// }

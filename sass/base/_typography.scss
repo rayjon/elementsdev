@@ -1,0 +1,87 @@
+body {
+  color: $base-font-color;
+  font-family: $base-font-family;
+  //font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+  //line-height: $heading-line-height;
+  color: inherit;
+}
+
+h1,
+.entry-title,
+.post-type-archive-jetpack-testimonial .page-title {
+    font-size: modular-scale(3);
+    margin-bottom: $base-spacing;
+
+}
+
+.entry-title {
+    margin-bottom: $base-spacing * 4;
+    text-align: center;
+}
+
+h2 {
+    font-size: modular-scale(2);
+    margin-bottom: $base-spacing * 1.25;
+}
+
+.entry-header h2 {
+    font-size: modular-scale(3);
+}
+
+h3 {
+    font-size: modular-scale(1);
+    margin-bottom: $small-spacing / 2;
+}
+
+h4 {
+    font-size: modular-scale(0);
+    margin: $small-spacing / 4;
+}
+
+p {
+  margin: 0 0 $base-spacing * 1.5;
+}
+
+a {
+  color: $action-color;
+  text-decoration: none;
+  transition: color $base-duration $base-timing;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: shade($action-color, 25%);
+  }
+}
+
+hr {
+  border-bottom: $base-border;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: $base-spacing 0;
+}
+
+blockquote {
+    border: 0 solid $action-color;
+    border-left-width: 2px;
+    font-size: $base-font-size;
+    font-style: italic;
+    line-height: $base-line-height;
+    margin: 0 0 $base-spacing;
+    padding-left: $base-spacing;
+}
+
+cite {
+    margin: $base-spacing / 3 0 0;
+}
