@@ -885,11 +885,45 @@
 		"oAP": "\/functions.php",
 		"oF": 0
 		},
+	"\/header.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/header.php",
+		"oF": 0
+		},
+	"\/images\/elements-dev-logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/images\/elements-dev-logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/images\/elements-logo-w-text.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/images\/elements-logo-w-text.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/images\/error_log": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/images\/error_log",
 		"oF": 0
+		},
+	"\/images\/man-with-ipad.jpeg": {
+		"ft": 16384,
+		"iS": 253033,
+		"oA": 0,
+		"oAP": "\/images\/man-with-ipad.jpg",
+		"oF": 0,
+		"opt": 0
 		},
 	"\/images\/seigaiha.png": {
 		"ft": 32768,
@@ -944,6 +978,16 @@
 		"oAP": "\/images\/websites-for-people.jpeg",
 		"oF": 0,
 		"opt": 0
+		},
+	"\/images\/White.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/images\/White.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/sass\/base\/_base.scss": {
 		"aP": 1,
@@ -1100,6 +1144,14 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"\/screenshot.jpg": {
+		"ft": 16384,
+		"iS": 109453,
+		"oA": 0,
+		"oAP": "\/screenshot.jpg",
+		"oF": 0,
+		"opt": 0
 		},
 	"\/single-jetpack-portfolio.php": {
 		"ft": 8192,
