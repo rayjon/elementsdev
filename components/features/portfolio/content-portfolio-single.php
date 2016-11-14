@@ -1,6 +1,6 @@
 <?php
 /**
- * @package Crisaba_Business
+ * @package Elements Development
  */
 
 // Access global variable directly to adjust the content width for portfolio single page

@@ -2,7 +2,7 @@
 /**
  *
  *
- * @package Shoreditch
+ * @package Elements Development
  */
  get_header(); ?>
 

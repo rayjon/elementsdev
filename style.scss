@@ -4,7 +4,7 @@ Template: shoreditch
 Theme URI: https://crisaba.com
 Description: This theme was developed for Elements Development and is based
 on the Shoreditch theme by Automattic.
-Version: 1.2.0
+Version: 1.2.1
 Author: Raymond Johnson
 Author URI: https://linkedin.com/raycjon
 License: GNU General Public License v2 or later
@@ -459,14 +459,16 @@ header {
 
 .hentry-wrapper {
     padding-bottom: $section-spacing;
+    @include outer-container();
     
-    @include media($large-screen) {
-        @include span-columns(7);
-        @include shift(2.5);
+    .entry-header,
+    .entry-content {
+        @include media($large-screen) {
+            @include span-columns(8);
+            @include shift(2);
+        }
     }
 }
-
-
 
 .contact-form label span {
     display: none;
@@ -496,4 +498,15 @@ body.single-jetpack-portfolio .content-area {
 .hentry .service:not(:first-child) {
     margin-top: $section-spacing;
     overflow: auto;;
+}
+
+.comments-area {
+    @include outer-container();
+    
+    .comment-respond {
+        @include media($large-screen) {
+            @include span-columns(8);
+            @include shift(2);
+        }
+    }
 }

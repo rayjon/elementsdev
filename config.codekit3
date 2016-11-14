@@ -1188,6 +1188,12 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/template-parts\/content-portfolio.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-parts\/content-portfolio.php",
+		"oF": 0
+		},
 	"\/template-parts\/content-testimonial.php": {
 		"ft": 8192,
 		"oA": 0,

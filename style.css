@@ -4,7 +4,7 @@ Template: shoreditch
 Theme URI: https://crisaba.com
 Description: This theme was developed for Elements Development and is based
 on the Shoreditch theme by Automattic.
-Version: 1.2.0
+Version: 1.2.1
 Author: Raymond Johnson
 Author URI: https://linkedin.com/raycjon
 License: GNU General Public License v2 or later
@@ -934,15 +934,24 @@ Main components
       background-color: #FFFCF3; }
 
 .hentry-wrapper {
-  padding-bottom: 8.1rem; }
+  padding-bottom: 8.1rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  .hentry-wrapper::after {
+    clear: both;
+    content: "";
+    display: block; }
   @media screen and (min-width: 896px) {
-    .hentry-wrapper {
+    .hentry-wrapper .entry-header,
+    .hentry-wrapper .entry-content {
       float: left;
       display: block;
       margin-right: 2.3576520234%;
-      width: 57.3509783236%;
-      margin-left: 21.3245108382%; }
-      .hentry-wrapper:last-child {
+      width: 65.8807826589%;
+      margin-left: 17.0596086706%; }
+      .hentry-wrapper .entry-header:last-child,
+      .hentry-wrapper .entry-content:last-child {
         margin-right: 0; } }
 
 .contact-form label span {
@@ -964,4 +973,22 @@ body.single-jetpack-portfolio .content-area {
 .hentry .service:not(:first-child) {
   margin-top: 8.1rem;
   overflow: auto; }
+
+.comments-area {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  .comments-area::after {
+    clear: both;
+    content: "";
+    display: block; }
+  @media screen and (min-width: 896px) {
+    .comments-area .comment-respond {
+      float: left;
+      display: block;
+      margin-right: 2.3576520234%;
+      width: 65.8807826589%;
+      margin-left: 17.0596086706%; }
+      .comments-area .comment-respond:last-child {
+        margin-right: 0; } }
 /*# sourceMappingURL=style.css.map */
