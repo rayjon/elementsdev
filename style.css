@@ -4,7 +4,7 @@ Template: shoreditch
 Theme URI: https://crisaba.com
 Description: This theme was developed for Elements Development and is based
 on the Shoreditch theme by Automattic.
-Version: 1.2.1
+Version: 1.2.2
 Author: Raymond Johnson
 Author URI: https://linkedin.com/raycjon
 License: GNU General Public License v2 or later
@@ -311,29 +311,29 @@ header .site-title {
 .hero {
   background-image: -webkit-linear-gradient(rgba(62, 105, 220, 0.9), rgba(39, 95, 243, 0.9)), url(images/websites-for-people.jpeg);
   background-image: linear-gradient(rgba(62, 105, 220, 0.9), rgba(39, 95, 243, 0.9)), url(images/websites-for-people.jpeg);
-  padding: 8.1rem 0;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto; }
-  .hero::after {
-    clear: both;
-    content: "";
-    display: block; }
+  padding: 8.1rem 0; }
   .hero h1, .hero p {
     color: #FFFCF3; }
   @media screen and (min-width: 896px) {
     .hero {
       padding: 16.2rem 0 12.15rem; } }
   .hero .entry-header {
-    padding: 1.8rem; }
+    padding: 1.8rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto; }
+    .hero .entry-header::after {
+      clear: both;
+      content: "";
+      display: block; }
     @media screen and (min-width: 896px) {
-      .hero .entry-header {
+      .hero .entry-header .entry-header-wrapper {
         float: left;
         display: block;
         margin-right: 2.3576520234%;
-        width: 57.3509783236%;
-        margin-left: 21.3245108382%; }
-        .hero .entry-header:last-child {
+        width: 65.8807826589%;
+        margin-left: 17.0596086706%; }
+        .hero .entry-header .entry-header-wrapper:last-child {
           margin-right: 0; } }
   .hero .button {
     border-color: #FFFCF3;
@@ -346,29 +346,7 @@ header .site-title {
   min-height: 60vh;
   background: #070613;
   color: #E6E6E4;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  /*
-    .panel {
-        position: relative;
-        width: 40%;
-        overflow: hidden;
-        display: none;
-        
-        @include media($large-screen) {
-            @include span-columns(5);
-            @include omega;
-            display: block;
-            background-size: cover;
-            background-position-x: 60%;
-        }
-    }
-*/ }
-  .how-we-help::after {
-    clear: both;
-    content: "";
-    display: block; }
+  overflow: auto; }
   .how-we-help h3 {
     font-size: 1em;
     text-transform: uppercase;
@@ -383,52 +361,22 @@ header .site-title {
     margin-top: 3px; }
   .how-we-help .services {
     padding: 8.1rem 1.8rem;
-    width: 100%;
-    /*
-        &:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            border-top: 22px solid $cerulean;
-            @include media($large-screen) {
-                border-top: 0;
-                border-left: 22px solid $cerulean;
-                top: 0;
-            }
-        }
-        
-        &:after {
-            content: '';
-            position: absolute;
-            top: 20px;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            border-top: 22px solid $secondary-color;
-            @include media($large-screen) {
-                border-left: 22px solid $secondary-color;
-                border-top: 0;
-                top: 0;
-                left: 20px;
-            }
-        }
-*/ }
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto; }
+    .how-we-help .services::after {
+      clear: both;
+      content: "";
+      display: block; }
     @media screen and (min-width: 896px) {
-      .how-we-help .services {
+      .how-we-help .services .wrap {
         float: left;
         display: block;
         margin-right: 2.3576520234%;
-        width: 57.3509783236%;
-        margin-left: 21.3245108382%; }
-        .how-we-help .services:last-child {
+        width: 65.8807826589%;
+        margin-left: 17.0596086706%; }
+        .how-we-help .services .wrap:last-child {
           margin-right: 0; } }
-  .how-we-help .wrapper {
-    box-sizing: border-box;
-    max-width: 600px;
-    margin: 0 auto; }
   .how-we-help .development {
     color: #E65654; }
   .how-we-help .design {
@@ -445,6 +393,10 @@ header .site-title {
   background-image: -webkit-linear-gradient(rgba(255, 252, 243, 0.6), rgba(230, 241, 248, 0.1)), url(images/seigaiha.png);
   background-image: linear-gradient(rgba(255, 252, 243, 0.6), rgba(230, 241, 248, 0.1)), url(images/seigaiha.png);
   padding: 8.1rem 0; }
+  .who-we-help .hentry-wrapper {
+    padding-bottom: 0; }
+  .who-we-help .entry-header {
+    padding-bottom: 0; }
   .who-we-help header, .who-we-help footer {
     text-align: center; }
   .who-we-help .cards {
@@ -507,50 +459,33 @@ header .site-title {
   background: #444;
   color: #FFFCF3;
   overflow: auto;
-  padding: 8.1rem 1.8rem;
-  /*
-    figure {
-        width: 40%;
-        position: relative;
-        overflow: hidden;
-        flex-grow: 1;
-    }
-
-    img {
-        position: absolute;
-        bottom: 0;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        max-width: 100%;
-    }
-*/
-  /*
-    .wrapper {
-        box-sizing: border-box;
-        max-width: $medium-screen;
-        margin: 0 auto;
-    }
-*/ }
-  .cta header,
-  .cta footer {
-    text-align: center; }
+  padding: 8.1rem 1.8rem; }
+  @media screen and (min-width: 896px) {
+    .cta header,
+    .cta footer {
+      text-align: center; } }
   .cta h2 {
     font-size: 1.953125em; }
   .cta .start-your-project {
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto; }
+    .cta .start-your-project::after {
+      clear: both;
+      content: "";
+      display: block; }
     @media screen and (min-width: 896px) {
-      .cta .start-your-project {
+      .cta .start-your-project .wrapper {
         float: left;
         display: block;
         margin-right: 2.3576520234%;
-        width: 57.3509783236%;
-        margin-left: 21.3245108382%; }
-        .cta .start-your-project:last-child {
+        width: 65.8807826589%;
+        margin-left: 17.0596086706%; }
+        .cta .start-your-project .wrapper:last-child {
           margin-right: 0; } }
+  .cta footer {
+    text-align: center; }
   .cta .button:hover {
     background: #FFFCF3;
     color: #3E69DC; }

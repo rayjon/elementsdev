@@ -4,7 +4,7 @@ Template: shoreditch
 Theme URI: https://crisaba.com
 Description: This theme was developed for Elements Development and is based
 on the Shoreditch theme by Automattic.
-Version: 1.2.1
+Version: 1.2.2
 Author: Raymond Johnson
 Author URI: https://linkedin.com/raycjon
 License: GNU General Public License v2 or later
@@ -132,9 +132,7 @@ header {
         rgba(39, 95, 243, 0.9)), 
         url(images/websites-for-people.jpeg);
     padding: $section-spacing 0;
-    
-    @include outer-container(100%);
-    
+        
     h1, p {
         color: $base-background-color;
     }
@@ -145,10 +143,13 @@ header {
 
     .entry-header {
         padding: $base-spacing;
+        @include outer-container();
         
-        @include media($large-screen) {
-            @include span-columns(7);
-            @include shift(2.5);
+        .entry-header-wrapper {
+            @include media($large-screen) {
+                @include span-columns(8);
+                @include shift(2);
+            }
         }
     }
 
@@ -167,8 +168,7 @@ header {
     min-height: 60vh;
     background: $jaguar;
     color: $mercury;
-    
-    @include outer-container(100%);
+    overflow: auto;
     
     h3 {
         font-size: modular-scale(0);
@@ -179,23 +179,6 @@ header {
     p {
         margin-bottom: $base-spacing * 2;
     }
-
-/*
-    .panel {
-        position: relative;
-        width: 40%;
-        overflow: hidden;
-        display: none;
-        
-        @include media($large-screen) {
-            @include span-columns(5);
-            @include omega;
-            display: block;
-            background-size: cover;
-            background-position-x: 60%;
-        }
-    }
-*/
 
     .entry-header {
         margin-bottom: $base-spacing * 2;
@@ -208,57 +191,15 @@ header {
     }
     
     .services {
-        // box-sizing: border-box;
-        // border-top: 22px solid $gulf-stream;
         padding: $section-spacing $base-spacing;
-        width: 100%;
-
-        @include media($large-screen) {
-            // border-top: none;
-            // border-left: 22px solid $gulf-stream;
-            //padding: $section-spacing $base-spacing $section-spacing $base-spacing * 3;
-            @include span-columns(7);
-            @include shift(2.5);
-        }
-
-/*
-        &:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            border-top: 22px solid $cerulean;
+        @include outer-container();
+            
+        .wrap {
             @include media($large-screen) {
-                border-top: 0;
-                border-left: 22px solid $cerulean;
-                top: 0;
+                @include span-columns(8);
+                @include shift(2);
             }
         }
-        
-        &:after {
-            content: '';
-            position: absolute;
-            top: 20px;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            border-top: 22px solid $secondary-color;
-            @include media($large-screen) {
-                border-left: 22px solid $secondary-color;
-                border-top: 0;
-                top: 0;
-                left: 20px;
-            }
-        }
-*/
-    }
-
-    .wrapper {
-        box-sizing: border-box;
-        max-width: $medium-screen;
-        margin: 0 auto;
     }
 
     .development {
@@ -291,6 +232,14 @@ header {
         rgba(230, 241, 248, 0.1)), 
         url(images/seigaiha.png);
     padding: $section-spacing 0;
+    
+    .hentry-wrapper {
+        padding-bottom: 0;
+    }
+    
+    .entry-header {
+        padding-bottom: 0;
+    }
 
     header, footer {
         text-align: center;
@@ -369,52 +318,32 @@ header {
     
     header,
     footer {
-        text-align: center;
+        @include media($large-screen) {
+            text-align: center;
+        }
     }
     
     h2 {
         font-size: modular-scale(3);
     }
-/*
-    figure {
-        width: 40%;
-        position: relative;
-        overflow: hidden;
-        flex-grow: 1;
-    }
-
-    img {
-        position: absolute;
-        bottom: 0;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        max-width: 100%;
-    }
-*/
 
     .start-your-project {
         box-sizing: border-box;
-        //padding: $base-spacing * 3 $base-spacing;
+        @include outer-container();
         
-        @include media($large-screen) {
-            //padding: $base-spacing * 3 0;
-
-            @include span-columns(7);
-            @include shift(2.5);
+        .wrapper {
+            @include media($large-screen) {
+                //padding: $base-spacing * 3 0;
+    
+                @include span-columns(8);
+                @include shift(2);
+            }
         }
     }
-
-/*
-    .wrapper {
-        box-sizing: border-box;
-        max-width: $medium-screen;
-        margin: 0 auto;
+    
+    footer {
+        text-align: center;
     }
-*/
 
     .button {
         &:hover {

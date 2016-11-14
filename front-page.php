@@ -47,27 +47,24 @@ get_header(); ?>
 							<?php endif; ?>
           				</section>
 						<section class="how-we-help">
-<!--
-							  <section class="panel">
-									<img src="http://crisaba.com/wp-content/uploads/2016/09/website-maintenance.jpeg" alt="man-with-ipad">
-								</section>
--->
 						   	<section class="services">
-                                <header>
-								    <h2>Bring meaning to your content.</h2>
-                                    <p>We help people empower and inform others by spreading meaningful ideas and goods through simple, accessible websites. Here are the ways we achieve our purpose and yours:
-								</header>
-								<h3 class="development"><span class="dashicons dashicons-admin-generic"></span> Development</h3>
-								<p>High quality HTML, CSS, and Javascript for your themes and templates.</p>
-
-								<h3 class="design"><span class="dashicons dashicons-admin-customizer"></span> Design</h3>
-								<p>Consitent visual identity composed of logos, colors, imagery, typography, and imagery.</p>
-
-                                <h3 class="maintenance"><span class="dashicons dashicons-hammer"></span> Maintenance</h3>
-								<p>Keep your visitors (and content managers) happy with a monthly website tune-up.</p>
-								<footer>
-									<a href="" class="button">Learn How We Can Help</a>
-								</footer>
+    						   	<div class="wrap">
+                                    <header>
+    								    <h2>Bring meaning to your content.</h2>
+                                        <p>We help people empower and inform others by spreading meaningful ideas and goods through simple, accessible websites. Here are the ways we achieve our purpose and yours:
+    								</header>
+    								<h3 class="development"><span class="dashicons dashicons-admin-generic"></span> Development</h3>
+    								<p>High quality HTML, CSS, and Javascript for your themes and templates.</p>
+    
+    								<h3 class="design"><span class="dashicons dashicons-admin-customizer"></span> Design</h3>
+    								<p>Consitent visual identity composed of logos, colors, imagery, typography, and imagery.</p>
+    
+                                    <h3 class="maintenance"><span class="dashicons dashicons-hammer"></span> Maintenance</h3>
+    								<p>Keep your visitors (and content managers) happy with a monthly website tune-up.</p>
+    								<footer>
+    									<a href="" class="button">Learn How We Can Help</a>
+    								</footer>
+								</div>
                             </section>
 						</section>
 						<section class="who-we-help">
